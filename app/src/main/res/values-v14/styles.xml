@@ -1,0 +1,69 @@
+<resources >
+
+<!-- Two custom themes -->
+<style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    <!-- API 1-10 theme customizations go here -->
+
+</style>
+
+<style name="AppTheme" parent="AppBaseTheme">
+    <!-- Theme customizations NOT specific to a particular API -->
+
+    <!-- Radio Button Text Size -->
+    <item name="android:radioButtonStyle">@style/RadioButton</item>
+
+    <!-- Window background color -->
+    <item name="android:windowBackground">@color/background</item>
+
+    <!-- For the resting Spinner style -->
+    <item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>
+
+    <!-- For each individual Spinner list item once clicked on -->
+    <item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownItemStyle</item>
+
+    <!-- Text colors -->
+    <item name="android:textColorPrimary">@color/white</item>
+    <item name="android:textColorSecondary">@color/white</item>
+
+</style>
+
+    <!-- Nine custom styles -->
+    <style name="TextView">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="EditText" parent="@style/TextView" />
+
+    <style name="Button" parent="@style/TextView">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Label">
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Label.Indent">
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="PaddedWidget">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name= "RadioButton" parent="@android:style/TextAppearance">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <style name="spinnerDropDownItemStyle" parent="@android:style/Widget.DropDownItem">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+</resources>
